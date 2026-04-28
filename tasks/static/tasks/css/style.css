@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/static/files/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Gilroy', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 60px;
+    background-color: rgb(52, 104, 121);
+    height: 80px;
+    padding: 20px;
+}
+a:hover
+{
+      transform: scale(1.1);
+}

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/static/files/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+h4,h3{
+    color: rgb(52, 104, 121);
+}
+p,span{
+    color: rgb(52, 104, 121);
+}
+.username{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+
+.task-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.task-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+}
+
+.Date {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #346879;
+    color: white;
+    border-radius: 5px;
+}
+.empty{
+    padding: 10px;
+}

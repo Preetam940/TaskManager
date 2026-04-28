@@ -1,0 +1,29 @@
+{% extends "tasks/base.html" %}
+
+{% load static %}
+{% block css %}
+ <link rel="stylesheet" href="{% static 'tasks/css/add_task.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+   <div class="container">
+     <label for="title">Title</label>
+     <input type="text" name="title" id="title" required>
+   </div>
+
+   <div class="container">
+     <label for="Description">Description</label>
+     <textarea name="Description" id="Description"></textarea>
+   </div>
+    <div class="button">
+       <button type="submit" class="btn">Add Task</button>
+   </div>
+
+</form>
+
+
+{% endblock content %}
+

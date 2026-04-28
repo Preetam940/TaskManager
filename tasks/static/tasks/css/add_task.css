@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/static/files/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+form{
+    border: 2px solid  rgb(52, 104, 121);
+    width: 500px;
+    margin-top: 60px;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    background-color:#f5f9fa;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.container{
+     height: 40px;
+     width: 400px;
+     padding: 40px;
+     outline: none;
+}
+.button{
+    margin: 40px;
+}
+.btn{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(52, 104, 121);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+input {
+    margin-left: 10px;
+    outline: none;
+    height: 25px;
+}

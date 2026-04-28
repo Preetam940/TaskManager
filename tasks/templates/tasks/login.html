@@ -1,0 +1,27 @@
+
+{% extends "tasks/base.html" %}
+{% load static %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'tasks/css/login.css' %}">
+{% endblock css %}
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+   <div class="container">
+     <label for="username">Username</label>
+     <input type="text" name="username" id="username" required>
+   </div>
+
+   <div class="container">
+     <label for="password">Password</label>
+     <input type="password" name="password" id="password" required>
+   </div>
+    <div class="button">
+       <button type="submit" class="btn">Login</button>
+   </div>
+
+</form>
+
+
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% extends "tasks/base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'tasks/css/dashboard.css' %}">
+{% endblock css %}
+
+{% block content %}
+{% if user.is_authenticated %}
+   <p class="username">Welcome {{user.username}}</p>
+   {% for task in tasks  %}
+
+   <div class="task-card">
+     <h3>{{ task.title }}</h3>
+     <p>{{task.Description}}</p>
+     <span class="Date">{{task.CreationDate}}</span>
+   </div>
+    
+     
+   {% endfor %}
+{% else %}
+<div class="second">
+    <h4 class="empty">No tasks to view, login first</h4>
+</div>
+    
+{% endif %}
+
+{% endblock content %}
