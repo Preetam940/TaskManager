@@ -31,7 +31,7 @@ Follow these steps to run the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Preetam940/synent-task9-TaskManager-PreetamPatel
+git clone https://github.com/Preetam940/TaskManager
 
 # Navigate to project folder
 cd Task_Manager
